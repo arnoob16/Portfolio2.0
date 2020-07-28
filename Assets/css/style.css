@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #fb6681, #fdccd5)
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    position: relative;
+}
+
+.nav-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 15vh;
+    margin: auto;
+}
+
+.navbar {
+    min-height: 15vh;
+    position: sticky;
+    top: 0;
+}
+
+.nav-brand {
+    width: 100px;
+    height: 15vh;
+}
+
+.nav-item {
+    position: absolute;
+    right: 0;
+    display: flex;
+    list-style: none;
+}
+
+.nav-item li {
+    margin: 10px;
+}
+
+.nav-item {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    color: #F93357;
+    font-weight: 800;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+footer .footer-text {
+    color: #aeaeae;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.25em;
+    align-items: center;
+    margin-top: -25px;
+    padding-bottom: 20px;
+    background-color: #F93357;
+}
+
+.footer-text strong {
+    color: #F93357;
+}
+
+@media screen and (max-width: 500px){
+    footer .footer-text{
+        font-size: 1em;
+        padding-bottom: 0px;
+    }
+}
+
+svg {
+    width: 100%;
+    overflow: visible;
+}
+
+.wave {
+    animation: wave 3s linear;
+    animation-iteration-count: infinite;
+    fill: #181818;
+}
+
+.drop {
+    fill: #181818;
+    animation: drop 8.2s linear infinite normal;
+    stroke: #181818;
+    stroke-width: 0.5;
+    transform: translateY(25px);
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+}
+
+.drop2 {
+    animation-delay: 8s;
+    animation-duration: 8s;
+}
+
+.drop3 {
+    animation-delay: -7s;
+    animation-duration: 8.4s;
+}
+
+.drop4 {
+    animation-delay: 6.7s;
+}
+
+.drop5 {
+    animation-delay: 7.7s;
+    animation-duration: 8.1s;
+}
+
+.drop6 {
+    animation-delay: -7.1s;
+    animation-duration: 8.2s;
+}
+
+.gooeff {
+    filter: url(#goo);
+}
+
+#wave2 {
+    animation-duration: 10s;
+    animation-direction: reverse;
+    opacity: .6
+}
+
+#wave3 {
+    animation-duration: 12s;
+    opacity: .3;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(25px);
+    }
+
+    30% {
+        transform: translateY(-10px) scale(.1);
+    }
+
+    30.001% {
+        transform: translateY(25px) scale(1);
+    }
+
+    70% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(-10px) scale(.1);
+    }
+}
+
+@keyframes wave {
+    to {
+        transform: translateX(-100%);
+    }
+}

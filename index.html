@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arnab Deep | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./Assets/css/top-animation.css">
     <link rel="stylesheet" type="text/css" href="./Assets/css/style.css">
 </head>
@@ -37,8 +38,58 @@
             <h5>I am a <span id="type-text"></span><span class="cursor">|</span></h5>
         </div>
     </section>
-    <script src="./Assets/js/script.js"></script>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand"></div>
+            <ul class="nav-item">
+                <li>About</li>
+                <li>Projects</li>
+                <li>Skills</li>
+                <li>Certifications</li>
+                <li>Open Source</li>
+                <li>Contacts</li>
+            </ul>
+        </div>
+    </nav>
+
+    <section style="height: 1000vh;">
+
+    </section>
+    <footer>
+        <svg viewBox="0 0 120 28">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="
+                   1 0 0 0 0  
+                   0 1 0 0 0  
+                   0 0 1 0 0  
+                   0 0 0 13 -9" result="goo" />
+                    <xfeBlend in="SourceGraphic" in2="goo" />
+                </filter>
+                <path id="wave"
+                    d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+            </defs>
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+            <g class="gooeff" filter="url(#goo)">
+                <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8" />
+                <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5" />
+                <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2" />
+                <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8" />
+                <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5" />
+                <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2" />
+                <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+            </g>
+        </svg>
+        <div class="footer-text">
+            <p>Made with <strong>❤</strong> by <strong>Arnab Deep</strong></p>
+            <p>Copyright © 2020 | All rights reserved.</p>
+        </div>
+    </footer>
     <script src="./Assets/js/type.js"></script>
+    <script src="./Assets/js/script.js"></script>
 </body>
 
 </html>
