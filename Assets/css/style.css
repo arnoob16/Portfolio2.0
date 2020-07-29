@@ -205,7 +205,8 @@ svg {
     color: #fff;
     transition: .5s;
     font-size: 25px;
+    transform: rotate(45deg);
 }
 .nav-toggle .active{
-    transform: rotate(405deg);
+    transform: rotate(360deg);
 }
