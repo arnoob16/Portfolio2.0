@@ -85,8 +85,8 @@ footer .footer-text {
     color: #F93357;
 }
 
-@media screen and (max-width: 500px){
-    footer .footer-text{
+@media screen and (max-width: 500px) {
+    footer .footer-text {
         font-size: 1em;
         padding-bottom: 0px;
     }
@@ -180,17 +180,18 @@ svg {
     }
 }
 
-.about{
-    min-height: 100vh;
-}
-.projects{
+.about {
     min-height: 100vh;
 }
 
-.nav-toggle{
+.projects {
+    min-height: 100vh;
+}
+
+.nav-toggle {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 20px;
+    right: 20px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -201,12 +202,41 @@ svg {
     justify-content: center;
     align-items: center;
 }
-.nav-toggle .fas{
+
+.nav-toggle .fas {
     color: #fff;
     transition: .5s;
     font-size: 25px;
     transform: rotate(45deg);
 }
-.nav-toggle .active{
+
+.nav-toggle .active {
     transform: rotate(360deg);
+}
+
+.nav-overlay {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fb6681;
+    transition: 1.5s;
+}
+
+.nav .active {
+    z-index: +1;
+    transform: scale(100);
+}
+
+@media screen and (max-width: 999px){
+    nav{
+        display: none;
+    }
+}
+@media screen and (min-width: 1000px){
+    .nav, .nav-toggle{
+        display: none;
+    }
 }
