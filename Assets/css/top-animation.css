@@ -93,6 +93,11 @@
 .cursor{
     font-weight: 800;
     animation: blink .1s infinite;
+    color: #F93357;
+}
+.intro span{
+    color: #F93357;
+    text-shadow: 2px 2px 5px #f82246;
 }
 @keyframes blink{
     0%{

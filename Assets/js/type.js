@@ -1,4 +1,4 @@
-const Skills = ["B.Tech Under Grad", "Front-End Web Developer", "Java & Python Programmer", "Student"];
+const Skills = ["B.Tech Under Grad", "Front-End Web Developer", "Java & Python Programmer", "Open Source Contributer", "Student"];
 let index = 0,
     skillIndex = 0,
     skill = "";

@@ -21,6 +21,7 @@
 
 body {
     position: relative;
+    background-color: #fff;
 }
 
 .nav-container {
@@ -78,7 +79,6 @@ footer .footer-text {
     align-items: center;
     margin-top: -25px;
     padding-bottom: 20px;
-    background-color: #F93357;
 }
 
 .footer-text strong {
@@ -178,4 +178,34 @@ svg {
     to {
         transform: translateX(-100%);
     }
+}
+
+.about{
+    min-height: 100vh;
+}
+.projects{
+    min-height: 100vh;
+}
+
+.nav-toggle{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #F93357;
+    z-index: +9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-toggle .fas{
+    color: #fff;
+    transition: .5s;
+    font-size: 25px;
+}
+.nav-toggle .active{
+    transform: rotate(405deg);
 }
