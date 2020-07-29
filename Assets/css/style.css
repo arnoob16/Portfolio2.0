@@ -252,7 +252,7 @@ svg {
     justify-content: center;
     align-items: center;
     z-index: +2;
-    transition-delay: .25s;
+    transition-delay: .5s;
     visibility: hidden;
 }
 .nav-menu ul{
