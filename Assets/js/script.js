@@ -8,7 +8,7 @@ $(document).ready(function () {
 })
 
 function get() {
-    if(($('#about').offset().top - $(window).scrollTop()) > 0){
+    if(($('#about').offset().top - $(window).scrollTop()) > 0 && screen.width>999){
         $(".nav-toggle").hide();
         $(".nav-overlay").hide();
     }

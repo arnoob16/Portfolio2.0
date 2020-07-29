@@ -212,7 +212,7 @@ svg {
 }
 
 .nav-toggle .active {
-    transform: rotate(360deg);
+    transform: rotate(540deg);
     z-index: +99;
 }
 
