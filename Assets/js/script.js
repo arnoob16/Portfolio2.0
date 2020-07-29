@@ -3,5 +3,6 @@ $(document).ready(function(){
         $(".nav-toggle").toggleClass("active")
         $(".fa-times").toggleClass("active")
         $(".nav-overlay").toggleClass("active")
+        $(".nav-menu").toggleClass("visible")
     })
 })

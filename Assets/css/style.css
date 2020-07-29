@@ -24,7 +24,7 @@ body {
     background-color: #fff;
 }
 
-.nav-container {
+nav .nav-container {
     width: 80%;
     display: flex;
     align-items: center;
@@ -33,29 +33,29 @@ body {
     margin: auto;
 }
 
-.navbar {
+nav .navbar {
     min-height: 15vh;
     position: sticky;
     top: 0;
 }
 
-.nav-brand {
+nav .nav-brand {
     width: 100px;
     height: 15vh;
 }
 
-.nav-item {
+nav .nav-item {
     position: absolute;
     right: 0;
     display: flex;
     list-style: none;
 }
 
-.nav-item li {
-    margin: 10px;
+nav .nav-item li {
+    margin: 15px;
 }
 
-.nav-item {
+nav .nav-item {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
     color: #F93357;
@@ -190,14 +190,14 @@ svg {
 
 .nav-toggle {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 25px;
+    right: 25px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
     background-color: #F93357;
-    z-index: +9;
+    z-index: +999;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,24 +212,27 @@ svg {
 
 .nav-toggle .active {
     transform: rotate(360deg);
+    z-index: +99;
 }
 
 .nav-overlay {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 25px;
+    right: 25px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #fb6681;
-    transition: 1.5s;
+    background-color: #FDC6D0;
+    transition: 1s;
+    z-index: -99999;
 }
-
-.nav .active {
-    z-index: +1;
+.nav{
+    overflow: hidden;
+}
+.nav .active{
     transform: scale(100);
+    visibility: visible;
 }
-
 @media screen and (max-width: 999px){
     nav{
         display: none;
@@ -239,4 +242,30 @@ svg {
     .nav, .nav-toggle{
         display: none;
     }
+}
+.nav .nav-menu{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: +2;
+    transition-delay: .25s;
+    visibility: hidden;
+}
+.nav-menu ul{
+    list-style: none;
+}
+.nav-menu ul a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    color: #F93357;
+    font-weight: 800;
+}
+.nav .visible{
+    transition-delay: .25s;
+    visibility: visible;
 }
