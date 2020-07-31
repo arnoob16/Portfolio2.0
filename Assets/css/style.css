@@ -196,9 +196,11 @@ svg {
     justify-content: center;
     align-items: center;
     outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav-toggle .fas {
+    -webkit-tap-highlight-color: transparent;
     color: #fff;
     transition: .5s;
     font-size: 25px;
@@ -208,9 +210,11 @@ svg {
 .nav-toggle .active {
     transform: rotate(540deg);
     z-index: +999;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav-overlay {
+    -webkit-tap-highlight-color: transparent;
     position: fixed;
     bottom: 25px;
     right: 25px;
@@ -252,8 +256,10 @@ svg {
 }
 .nav-menu ul{
     list-style: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .nav-menu ul a{
+    -webkit-tap-highlight-color: transparent;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;

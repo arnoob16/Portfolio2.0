@@ -7,6 +7,16 @@ $(document).ready(function () {
     })
 })
 
+$(document).ready(function(){
+    $(".navItem").click(function(){
+        console.log("clicked");
+        $(".nav-toggle").toggleClass("active")
+        $(".fa-times").toggleClass("active")
+        $(".nav-overlay").toggleClass("active")
+        $(".nav-menu").toggleClass("visible")
+    })
+})
+
 function get() {
     if($(window).width() > 960){
         $(".nav-toggle").hide();
