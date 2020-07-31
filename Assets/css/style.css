@@ -33,10 +33,11 @@ nav .nav-container {
     margin: auto;
 }
 
-nav .navbar {
+nav{
     min-height: 15vh;
     position: sticky;
     top: 0;
+    background-color: #fefefe;
 }
 
 nav .nav-brand {
@@ -180,14 +181,6 @@ svg {
     }
 }
 
-.about {
-    min-height: 100vh;
-}
-
-.projects {
-    min-height: 100vh;
-}
-
 .nav-toggle {
     position: fixed;
     bottom: 25px;
@@ -213,7 +206,7 @@ svg {
 
 .nav-toggle .active {
     transform: rotate(540deg);
-    z-index: +99;
+    z-index: +999;
 }
 
 .nav-overlay {
@@ -224,8 +217,8 @@ svg {
     height: 50px;
     border-radius: 50%;
     background-color: #FDC6D0;
-    transition: 1s;
-    z-index: -99999;
+    transition: .5s;
+    z-index: +99;
 }
 .nav{
     overflow: hidden;
@@ -252,8 +245,8 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: +2;
-    transition-delay: .5s;
+    z-index: +99;
+    transition-delay: .3s;
     visibility: hidden;
 }
 .nav-menu ul{
@@ -262,7 +255,7 @@ svg {
 .nav-menu ul a{
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color: #F93357;
     font-weight: 800;
 }
@@ -270,7 +263,57 @@ svg {
     transition-delay: .25s;
     visibility: visible;
 }
+.container{
+    width: 80%;
+    margin: auto;
+    z-index: -99999;
+}
 .row{
     display: flex;
-    flex-wrap: wrap;
+}
+.about {
+    min-height: 85vh;
+    z-index: -9999;
+    margin: auto;
+    padding-top: 15vh;
+}
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-image img{
+    width: 300px;
+    height: 400px;
+}
+.about-text{
+    margin: 0px 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+}
+@media screen and (max-width: 960px){
+    .container{
+        width: 95%;
+    }
+    .about{
+        flex-direction: row;
+        padding-top: 0;
+    }
+    .about .row{
+        flex-direction: column;
+    }
+    .about-text{
+        margin: 5px;
+    }
+}
+.projects {
+    min-height: 85vh;
 }
