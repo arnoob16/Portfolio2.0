@@ -8,13 +8,19 @@ $(document).ready(function () {
 })
 
 function get() {
-    if(($('#about').offset().top - $(window).scrollTop()) > 0 && screen.width>999){
+    if($(window).width() > 960){
         $(".nav-toggle").hide();
         $(".nav-overlay").hide();
     }
     else{
-        $(".nav-toggle").show();
-        $(".nav-overlay").show();
+        if(($('#about').offset().top - $(window).scrollTop()) > 0){
+            $(".nav-toggle").hide();
+            $(".nav-overlay").hide();
+        }
+        else{
+            $(".nav-toggle").show();
+            $(".nav-overlay").show();
+        }
     }
 }
 

@@ -270,3 +270,7 @@ svg {
     transition-delay: .25s;
     visibility: visible;
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
