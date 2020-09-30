@@ -97,6 +97,7 @@
 }
 .intro span{
     color: #F93357;
+    font-weight: 800;
     text-shadow: 2px 2px 5px #f82246;
 }
 @keyframes blink{
