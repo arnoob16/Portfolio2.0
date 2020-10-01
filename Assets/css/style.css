@@ -343,26 +343,6 @@ svg {
     background-color: #fff;
 }
 
-@media screen and (max-width: 960px) {
-    .container {
-        width: 95%;
-    }
-
-    .about {
-        flex-direction: row;
-        padding-top: 0;
-        margin-top: 100px;
-    }
-
-    .about .row {
-        flex-direction: column;
-    }
-
-    .about-text {
-        margin: 5px;
-    }
-}
-
 .projects {
     min-height: 85vh;
     display: flex;
@@ -525,5 +505,24 @@ svg {
     .stats img{
         margin: 2vh;
         width: 100%;
+    }
+}
+@media screen and (max-width: 960px) {
+    .container {
+        width: 95%;
+    }
+
+    .about {
+        flex-direction: row;
+        padding-top: 0;
+        margin-top: 100px;
+    }
+
+    .about .row {
+        flex-direction: column;
+    }
+
+    .about-text {
+        margin: 5px;
     }
 }
