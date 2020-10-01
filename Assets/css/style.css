@@ -286,7 +286,7 @@ svg {
 .container {
     width: 80%;
     margin: auto;
-    padding-bottom: 100vh;
+    padding-bottom: 50vh;
 }
 
 .row {
@@ -388,22 +388,6 @@ svg {
     list-style: none;
 }
 
-@media only screen and (max-width: 500px){
-    .projects ul{
-        width: 100%;
-    }
-    .projects ul li {
-        min-width: 60px;
-        height: 30px;
-        font-size: 1em;
-        margin: 5px !important;
-    }
-    .about-image img {
-        height: 400px;
-        width: 320px;
-    }
-}
-
 .projects ul li {
     cursor: pointer;
     width: 80px;
@@ -476,4 +460,70 @@ svg {
     color: #F93357;
     cursor: pointer;
     text-decoration: none;
+}
+
+.open-source{
+    padding-top: 15vh;
+    min-height: 100vh;
+    font-family: 'Poppins';
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.open-source h2{
+    font-size: 3em;
+}
+
+.stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.stats img{
+    margin: 5vh;
+}
+
+.gitstatsBtn{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #f0f0f0;
+    font-weight: 800;
+    font-family: 'Poppins';
+    background: linear-gradient(245deg,#11964c, #17cf3f);
+    outline: none;
+    border: none;
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 500px){
+    .projects ul{
+        width: 100%;
+    }
+    .projects ul li {
+        min-width: 60px;
+        height: 30px;
+        font-size: 1em;
+        margin: 5px !important;
+    }
+    .about-image img {
+        height: 400px;
+        width: 320px;
+    }
+    .open-source h2{
+        font-size: 2em;
+    }
+
+    .open-source h3{
+        font-size: 1em;
+    }
+
+    .stats img{
+        margin: 2vh;
+        width: 100%;
+    }
 }
