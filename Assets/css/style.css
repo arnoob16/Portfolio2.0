@@ -308,8 +308,8 @@ svg {
 }
 
 .about-image img {
-    width: 320px;
     height: 400px;
+    width: 320px;
 }
 
 .about-text {
@@ -398,6 +398,10 @@ svg {
         font-size: 1em;
         margin: 5px !important;
     }
+    .about-image img {
+        height: 400px;
+        width: 320px;
+    }
 }
 
 .projects ul li {
@@ -417,12 +421,13 @@ svg {
     font-weight: 900;
 }
 
-.project-container {
+.project-container #all,.project-container #web, .project-container #app, .project-container #others {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    height: fit-content;
 }
 
 .project-container .project-card {
