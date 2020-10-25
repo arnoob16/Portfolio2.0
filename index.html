@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arnab Deep | Portfolio</title>
+    <meta name="title" content="Arnab Deep's Portfolio">
+    <meta name="description"
+        content="Arnab Deep is a B.tech Undergrad who is comfortable working with webapps, mobile apps and python scripts.">
+    <meta name="keywords"
+        content="html, css, JavaScript, LearnYuva, LinkedIn, Arnab, Arnab Deep, GitHub, arnoob16, arnoob, Flutter, open source, GCP">
+    <meta name="author" content="Arnab Deep">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./Assets/css/top-animation.css">
@@ -14,6 +20,92 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #181818;
+            z-index: +9999;
+            overflow: hidden;
+        }
+
+        #loader {
+            display: block;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #F93357;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        #loader:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #fb6681;
+            -webkit-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite;
+        }
+
+        #loader:after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #FDC6D0;
+            -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
     <section class="star-banner">
         <div class="star star1"></div>
         <div class="star star2"></div>
@@ -24,20 +116,20 @@
         <div class="star star7"></div>
         <div class="star star8"></div>
         <div class="clouds">
-            <img src="./Assets/images/clouds/cloud1.png" style="--i:1;">
-            <img src="./Assets/images/clouds/cloud2.png" style="--i:2;">
-            <img src="./Assets/images/clouds/cloud3.png" style="--i:3;">
-            <img src="./Assets/images/clouds/cloud4.png" style="--i:4;">
-            <img src="./Assets/images/clouds/cloud5.png" style="--i:5;">
-            <img src="./Assets/images/clouds/cloud5.png" style="--i:10;">
-            <img src="./Assets/images/clouds/cloud4.png" style="--i:9;">
-            <img src="./Assets/images/clouds/cloud3.png" style="--i:8;">
-            <img src="./Assets/images/clouds/cloud2.png" style="--i:7;">
-            <img src="./Assets/images/clouds/cloud1.png" style="--i:6;">
+            <img src="./Assets/images/clouds/cloud1.webp" alt="cloud 1 for animation" style="--i:1;">
+            <img src="./Assets/images/clouds/cloud2.webp" alt="cloud 2 for animation" style="--i:2;">
+            <img src="./Assets/images/clouds/cloud3.webp" alt="cloud 3 for animation" style="--i:3;">
+            <img src="./Assets/images/clouds/cloud4.webp" alt="cloud 4 for animation" style="--i:4;">
+            <img src="./Assets/images/clouds/cloud5.webp" alt="cloud 5 for animation" style="--i:5;">
+            <img src="./Assets/images/clouds/cloud5.webp" alt="cloud 5 for animation" style="--i:10;">
+            <img src="./Assets/images/clouds/cloud4.webp" alt="cloud 4 for animation" style="--i:9;">
+            <img src="./Assets/images/clouds/cloud3.webp" alt="cloud 3 for animation" style="--i:8;">
+            <img src="./Assets/images/clouds/cloud2.webp" alt="cloud 2 for animation" style="--i:7;">
+            <img src="./Assets/images/clouds/cloud1.webp" alt="cloud 1 for animation" style="--i:6;">
         </div>
         <div class="intro center">
             <h1>Arnab Deep</h1>
-            <h5>I am a <span id="type-text"></span><span class="cursor">|</span></h5>
+            <h2>I am a <span id="type-text"></span><span class="cursor">|</span></h2>
         </div>
     </section>
 
@@ -54,10 +146,7 @@
                 <a href="#open-source">
                     <li>Open Source</li>
                 </a>
-                <!-- <a href="#">
-                    <li>Open Source</li>
-                </a> -->
-                <a href="#">
+                <a href="#contact">
                     <li>Contact Me</li>
                 </a>
             </ul>
@@ -80,10 +169,7 @@
                 <a href="#open-source" class="navItem">
                     <li>Open Source</li>
                 </a>
-                <!-- <a href="#" class="navItem">
-                    <li>Open Source</li>
-                </a> -->
-                <a href="#" class="navItem">
+                <a href="contact" class="navItem">
                     <li>Contact Me</li>
                 </a>
             </ul>
@@ -94,16 +180,21 @@
         <section class="about" id="about">
             <div class="row">
                 <div class="about-image">
-                    <img src="./Assets/images/pics/profile2.png">
+                    <img src="./Assets/images/pics/profile.webp"
+                        alt="Arnab Deep Front-end Developer, App Developer, Open Source Contributer, Undergrad, Open to work.">
                 </div>
                 <div class="about-text">
-                    <h1>Hi there <img src="./Assets/images/gifs/wave.gif" height="40px"></h1>
+                    <h1>Hi there <img src="./Assets/images/gifs/wave.gif" alt="Hey there, I am Arnab Deep"></h1>
                     <p>
-                        I am Arnab Deep, a budding web & app developer. I like making cool stuffs with Java, Python & JavaScript. 
-                        I am currently pursuing my Bachelor's in Computer Science and I am in my 5th semester. As you might have guessed already,
-                        I've started doing a bit of Competetive Programming as well.
+                        I am Arnab Deep, a budding web & app developer. I like making cool stuffs with Java, Python &
+                        JavaScript.
+                        I am currently pursuing my Bachelor's in Computer Science and I am in my 5th semester. As you
+                        might have guessed already,
+                        I've started doing a bit of Competetive Programming as well. I am a 2 star coder on Codechef & 5
+                        star in problem solving on Hackerrank.
                     </p>
-                    <a href="./Assets/images/pics/Arnab Deep's Resume.pdf">
+                    <a href="./Assets/images/pics/Arnab Deep's Resume.pdf"
+                        style="-webkit-tap-highlight-color: transparent;">
                         <button class="resumeBtn">Download Resume</button>
                     </a>
                 </div>
@@ -123,7 +214,7 @@
                 <div id="allClass" style="display: block;">
                     <div id="all">
                         <div class="project-card">
-                            <img src="./Assets/images/projects/AshaSteel.png">
+                            <img src="./Assets/images/projects/AshaSteel.webp" alt="Asha Steel Freelance Project">
                             <h2 class="project-name">Asha Steel</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -131,7 +222,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/GSRanchi.png">
+                            <img src="./Assets/images/projects/GSRanchi.webp" alt="GirlScript Ranchi Chapter website">
                             <h2 class="project-name">GS Ranchi</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -140,7 +231,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/khusruOP.png">
+                            <img src="./Assets/images/projects/khusruOP.webp" alt="Khusru OP Kotlin based Android app">
                             <h2 class="project-name">Khusru OP</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -148,7 +239,8 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/vimanaazGame.png">
+                            <img src="./Assets/images/projects/vimanaazGame.webp"
+                                alt="Vimanaz Game for Aaruush'20 Aerovision event">
                             <h2 class="project-name">Vimanaaz Game</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -156,7 +248,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/RM.png">
+                            <img src="./Assets/images/projects/RM.webp" alt="CSS made Real Madrid site design idea.">
                             <h2 class="project-name">Real Madrid Concept</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -164,7 +256,8 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/birthdayGreet.png">
+                            <img src="./Assets/images/projects/birthdayGreet.webp"
+                                alt="Birthday Greet card generator with Kotlin">
                             <h2 class="project-name">Birthday Greet</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -172,15 +265,17 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/learnyuva.png">
+                            <img src="./Assets/images/projects/learnyuva.webp"
+                                alt="LearnYuva - Igniting young minds website">
                             <h2 class="project-name">LearnYuva</h2>
                         </div>
                         <div class="project-card-overlay">
-                            <a href="https://github.com/arnoob16/LearnYuva" class="fab fa-3x fa-github"></a>
+                            <a href="https://github.com/anuragbyte/ly" class="fab fa-3x fa-github"></a>
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/StackHack.png">
+                            <img src="./Assets/images/projects/StackHack.webp"
+                                alt="ReEvent - a webapp made for Stackhack hackathon">
                             <h2 class="project-name">ReEvent StackHack</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -188,7 +283,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/Portfolio.png">
+                            <img src="./Assets/images/projects/Portfolio.webp" alt="My 1st portfolio website">
                             <h2 class="project-name">Portfolio 1.0</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -196,7 +291,8 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/shakuni.png">
+                            <img src="./Assets/images/projects/shakuni.webp"
+                                alt="Shakuni Lite android app with dice rolling functionality in flutter.">
                             <h2 class="project-name">Shakuni Lite</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -204,7 +300,8 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/Konstruktion.png">
+                            <img src="./Assets/images/projects/Konstruktion.webp"
+                                alt="Konstruktion domain quiz app for Aaruush'20">
                             <h2 class="project-name">Konstruktion Quiz</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -212,7 +309,8 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/wordcloud.png">
+                            <img src="./Assets/images/projects/wordcloud.webp"
+                                alt="Python script to generate wordcloud based on frequency of words.">
                             <h2 class="project-name">WordCloud</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -220,7 +318,8 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/mailer.png">
+                            <img src="./Assets/images/projects/mailer.webp"
+                                alt="A python script to send mails to 100s of people from the command line.">
                             <h2 class="project-name">Multi Mailer</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -228,7 +327,8 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/GST Namer Bot.png">
+                            <img src="./Assets/images/projects/GST Namer Bot.webp"
+                                alt="a web scrapper that lists the name of a person by searching it via GST Number.">
                             <h2 class="project-name">GST Namer</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -236,7 +336,8 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/covid.png">
+                            <img src="./Assets/images/projects/covid.webp"
+                                alt="Covid tracker that gives latest count on covid cases in India.">
                             <h2 class="project-name">Covid Tracker</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -248,7 +349,7 @@
                 <div id="webClass" style="display: none;">
                     <div id="web">
                         <div class="project-card">
-                            <img src="./Assets/images/projects/learnyuva.png">
+                            <img src="./Assets/images/projects/learnyuva.webp">
                             <h2 class="project-name">LearnYuva</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -256,7 +357,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/GSRanchi.png">
+                            <img src="./Assets/images/projects/GSRanchi.webp" alt="GirlScript Ranchi website">
                             <h2 class="project-name">GS Ranchi</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -265,7 +366,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/covid.png">
+                            <img src="./Assets/images/projects/covid.webp" alt="Covid Tracker for India">
                             <h2 class="project-name">Covid Tracker</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -273,7 +374,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/Portfolio.png">
+                            <img src="./Assets/images/projects/Portfolio.webp" alt="My 1st portfolio.">
                             <h2 class="project-name">Portfolio 1.0</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -281,7 +382,8 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/vimanaazGame.png">
+                            <img src="./Assets/images/projects/vimanaazGame.webp"
+                                alt="Aerovision round 1 game for Aaruush'20 by Vimanaz.">
                             <h2 class="project-name">Vimanaaz Game</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -290,7 +392,8 @@
 
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/StackHack.png">
+                            <img src="./Assets/images/projects/StackHack.webp"
+                                alt="ReEvent webapp for StackHack hackathon.">
                             <h2 class="project-name">ReEvent StackHack</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -298,7 +401,8 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/Konstruktion.png">
+                            <img src="./Assets/images/projects/Konstruktion.webp"
+                                alt="Konstruktion game for Aaruush'20">
                             <h2 class="project-name">Konstruktion Quiz</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -306,7 +410,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/RM.png">
+                            <img src="./Assets/images/projects/RM.webp" alt="Real Madrid site concept UI design">
                             <h2 class="project-name">Real Madrid Concept</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -314,7 +418,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/AshaSteel.png">
+                            <img src="./Assets/images/projects/AshaSteel.webp" alt="Asha Steel Freelance Project">
                             <h2 class="project-name">Asha Steel</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -326,7 +430,7 @@
                 <div id="appClass" style="display: none;">
                     <div id="app">
                         <div class="project-card">
-                            <img src="./Assets/images/projects/birthdayGreet.png">
+                            <img src="./Assets/images/projects/birthdayGreet.webp">
                             <h2 class="project-name">Birthday Greet</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -334,7 +438,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/shakuni.png">
+                            <img src="./Assets/images/projects/shakuni.webp">
                             <h2 class="project-name">Shakuni Lite</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -342,7 +446,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/khusruOP.png">
+                            <img src="./Assets/images/projects/khusruOP.webp">
                             <h2 class="project-name">Khusru OP</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -354,7 +458,7 @@
                 <div id="othersClass" style="display: none;">
                     <div id="others">
                         <div class="project-card">
-                            <img src="./Assets/images/projects/wordcloud.png">
+                            <img src="./Assets/images/projects/wordcloud.webp">
                             <h2 class="project-name">WordCloud</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -362,7 +466,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/mailer.png">
+                            <img src="./Assets/images/projects/mailer.webp">
                             <h2 class="project-name">Multi Mailer</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -370,7 +474,7 @@
                         </div>
 
                         <div class="project-card">
-                            <img src="./Assets/images/projects/GST Namer Bot.png">
+                            <img src="./Assets/images/projects/GST Namer Bot.webp">
                             <h2 class="project-name">GST Namer</h2>
                         </div>
                         <div class="project-card-overlay">
@@ -384,22 +488,47 @@
         <section class="open-source" id="open-source">
             <h2>Open Source</h2>
             <p style="margin-top: 15px; padding: 5px;">
-                I've recently jumped into open-source development. I was a participant in Build with Let's Upgrade event by Let's Upgrade,
-                to get an exposure to open source. Currently I am contributing to repositories marked for Hacktoberfest'20. I am preparing for GSoC'21.
+                I've recently jumped into open-source development. I was a participant in Build with Let's Upgrade event
+                by Let's Upgrade,
+                to get an exposure to open source. I successfully completed Hacktoberfest with 8 merged PR's. I am
+                preparing for GSoC'21.
             </p>
 
             <h3 style="font-size: 2em;">Here are some of my GitHub stats - </h3>
             <div class="stats">
-                <img src="https://github-readme-stats.vercel.app/api?username=arnoob16&show_icons=true&theme=dark&line_height=40">
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arnoob16&theme=dark" alt="" srcset="">
+                <img src="https://github-readme-stats.vercel.app/api?username=arnoob16&show_icons=true&bg_color=111111&title_color=F93357&icon_color=fb6681&text_color=FDC6D0&line_height=40"
+                    alt="GitHub stats of user arnoob16 i.e. Arnab Deep">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arnoob16&hide=jupyter%20notebook&langs_count=6&custom_title=Stack%20I%20Use&bg_color=111111&title_color=F93357&icon_color=fb6681&text_color=FDC6D0"
+                    alt="Tech stack used mostly by github user arnoob16 i.e. Arnab Deep">
             </div>
             <br>
             <h3>Know more about my GitHub -</h3>
-            <a href="https://gitstats.me/arnoob16">
+            <a href="https://gitstats.me/arnoob16" style="-webkit-tap-highlight-color: transparent;">
                 <button class="gitstatsBtn">GitStats.me</button>
             </a>
         </section>
 
+        <section class="contact" id="contact">
+            <h3>Reach me out on:</h3>
+            <div class="social-media">
+                <a href="https://www.instagram.com/async_arnab.js/">
+                    <i class="fab fa-2x fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/arnabdeep/">
+                    <i class="fab fa-2x fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/arnoob16">
+                    <i class="fab fa-2x fa-github"></i>
+                </a>
+                <a href="https://stackoverflow.com/users/13132289/arnab">
+                    <i class="fab fa-2x fa-stack-overflow"></i>
+                </a>
+                <a
+                    href="https://www.quora.com/profile/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A4%AC-%E0%A4%A6%E0%A5%80%E0%A4%AA-Arnab-Deep">
+                    <i class="fab fa-2x fa-quora"></i>
+                </a>
+            </div>
+        </section>
     </div>
 
     <footer>
@@ -434,8 +563,8 @@
             <p>Copyright © 2020 | All rights reserved.</p>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
-        integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous"></script>
     <script src="./Assets/js/type.js"></script>
     <script src="./Assets/js/script.js"></script>

@@ -16,6 +16,12 @@ $(document).ready(function(){
     })
 })
 
+$(document).ready(function(){
+    setTimeout(() => {
+        $("#preloader").hide()
+    }, 1000);;
+})
+
 function get() {
     if($(window).width() > 960){
         $(".nav-toggle").hide();
@@ -44,6 +50,5 @@ function changeGallery(galleryID){
     let prevGallery = prevTab.getAttribute('id').toLowerCase() + 'Class';
     document.getElementById(prevGallery).style.display = 'none';
     galleryID = galleryID + 'Class';
-    // console.log(galleryID)
     document.getElementById(galleryID).style.display = 'block';
 }
